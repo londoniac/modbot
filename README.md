@@ -1,7 +1,3 @@
-Sure! Here's the fully **Markdown-formatted** version of your `README.md` that includes `*` for bullet points, `<b>` for bold text, backticks for code blocks, and proper line breaks for readability. This version will render properly on GitHub and similar platforms:
-
----
-
 # 🛠️ ModBot.io – Developer Brief
 
 ModBot.io is a SaaS tool designed to help Reddit moderators automate community engagement and moderation using lightweight, smart bots that run in containers on Google Cloud. This README outlines the technical requirements and project scope for building the platform MVP.
@@ -143,6 +139,3 @@ Need help?
 💬 Join our Discord: [discord.gg/link](https://discord.gg/)
 
 ---
-
-Let me know if you want this zipped or converted to a downloadable file!
-
