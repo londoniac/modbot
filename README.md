@@ -71,8 +71,8 @@ ModBot.io is a SaaS tool designed to help Reddit moderators automate community e
 * Plans:
 
   * **Free trial**: 7 days shared container
-  * **Standard**: \$7/month for 2 bots
-  * **Pro**: \$15/month for unlimited bots in a private container
+  * **Standard**: \$9/month for 2 bots - \$12 for 3 bots
+  * **Pro**: \$25/month for unlimited bots in a dedicated private container
 
 ---
 
