@@ -70,10 +70,6 @@ ModBot.io is a SaaS tool designed to help Reddit moderators automate community e
 * Stripe integration for monthly billing
 * Plans:
 
-  * **Free trial**: 7 days shared container
-  * **Standard**: \$9/month for 2 bots - \$12 for 3 bots
-  * **Pro**: \$25/month for unlimited bots in a dedicated private container
-
 ---
 
 ## 📂 Suggested Directory Structure
