@@ -1,48 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Select Bots</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ModBot.io - Bots</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <header>
-  <div><strong>ModBot.io</strong></div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="dashboard.html">Dashboard</a>
-    <a href="bots.html">Bots</a>
-    <a href="settings.html">Settings</a>
-    <a href="login.html">Login</a>
+  <nav class="container">
+    <div class="logo"><strong>ModBot.io</strong></div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="bots.html">Bots</a>
+      <a href="settings.html">Settings</a>
+      <a href="login.html">Login</a>
+    </div>
   </nav>
 </header>
-
-<main>
+<main class="container">
   <h1>Available Bots</h1>
   <div class="bots">
-    <div class="bot">
-      <h2>Welcome Bot</h2>
+    <div class="bot-card">
+      <h2>WelcomeBot</h2>
       <p>Automatically greets new posters with a customizable message.</p>
-      <button>Add Bot</button>
+      <a href="welcomebot.html" class="button">Configure</a>
     </div>
-    <div class="bot">
-      <h2>Waffle Bot</h2>
+    <div class="bot-card">
+      <h2>WaffleBot</h2>
       <p>Displays author’s previous posts on new submissions.</p>
-      <button>Add Bot</button>
+      <a href="wafflebot.html" class="button">Configure</a>
     </div>
-    <div class="bot">
+    <div class="bot-card">
       <h2>UpdateMe Bot</h2>
       <p>Lets users subscribe to authors or series updates.</p>
-      <button>Add Bot</button>
+      <a href="updatebot.html" class="button">Configure</a>
     </div>
-    <div class="bot">
+    <div class="bot-card">
       <h2>Weekly Stats Bot</h2>
       <p>Summarizes top posts, comments, and stats every week.</p>
-      <button>Add Bot</button>
+      <a href="weeklybot.html" class="button">Configure</a>
     </div>
-    <div class="bot">
+    <div class="bot-card">
       <h2>AutoRules Bot</h2>
       <p>Helps enforce flairing, word count, or custom rules.</p>
-      <button>Add Bot</button>
+      <a href="autorulesbot.html" class="button">Configure</a>
     </div>
   </div>
 </main>

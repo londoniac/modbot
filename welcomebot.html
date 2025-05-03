@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configure WelcomeBot</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <nav class="container">
+    <div class="logo"><strong>ModBot.io</strong></div>
+    <div class="nav-links">
+      <a href="bots.html">Back to Bots</a>
+    </div>
+  </nav>
+</header>
+<main class="container">
+  <h1>WelcomeBot Configuration</h1>
+  <form>
+    <label for="welcome-message">Welcome Message</label>
+    <textarea id="welcome-message" placeholder="Enter welcome message..."></textarea>
+    <label for="starter-links">Starter Links (comma-separated)</label>
+    <input type="text" id="starter-links" placeholder="e.g. /r/FAQ, /r/Rules" />
+    <div>
+      <label for="enable-bot">Enable Bot</label>
+      <input type="checkbox" id="enable-bot" checked />
+    </div>
+    <button type="submit" class="button">Save Settings</button>
+  </form>
+</main>
+</body>
+</html>
