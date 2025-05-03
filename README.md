@@ -2,6 +2,7 @@
 
 ModBot.io is a SaaS tool designed to help Reddit moderators automate community engagement and moderation using lightweight, smart bots that run in containers on Google Cloud. This README outlines the technical requirements and project scope for building the platform MVP.
 
+  * Check this basic mockup: [modbot.io](https://londoniac.github.io/modbot/index.html)
 ---
 
 ## 🚀 Project Overview
