@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ModBot.io - Bots</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ModBot.io – Login</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
   <header>
     <nav class="container">
-      <div class="logo"><strong>ModBot.io</strong></div>
+      <strong>ModBot.io</strong>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="dashboard.html">Dashboard</a>
@@ -20,14 +20,59 @@
     </nav>
   </header>
 
-  <main class="container">
-  <h1>Login</h1>
-  <p>Enter your Reddit mod credentials to continue.</p>
-  <form>
-    <input type="text" placeholder="Reddit Username" required><br><br>
-    <input type="password" placeholder="Password" required><br><br>
-    <button type="submit">Log In</button>
-  </form>
-</main>
+  <main class="container" style="text-align: center; padding: 4rem 1rem;">
+    <h1>Log in with Reddit</h1>
+    <p>We use Reddit OAuth to authenticate moderators securely.</p>
+    <a href="#" class="button" style="background-color: #ff4500; margin-top: 2rem;">
+      <img src="https://www.redditstatic.com/desktop2x/img/favicon/apple-icon-57x57.png" alt="Reddit Logo" style="width: 20px; vertical-align: middle; margin-right: 8px;">
+      Continue with Reddit
+    </a>
+    <p style="margin-top: 1rem; color: #6b7280; font-size: 0.9rem;">
+      You'll be redirected to Reddit to log in securely.
+    </p>
+    <p style="margin-top: 0.5rem; color: #6b7280; font-size: 0.9rem;">
+      We never store your Reddit login details. Authentication is securely handled by Reddit via OAuth. ModBot receives limited access tokens through Reddit’s official API, enabling bot features like post tracking, mod actions, and community insights—only within the scopes you approve.
+    </p>
+
+    <hr style="margin: 3rem 0;">
+
+    <h2>First Time Setup Instructions</h2>
+    <div style="text-align: left; max-width: 700px; margin: 0 auto; font-size: 0.95rem; color: #374151;">
+      <ol style="margin-bottom: 2rem;">
+        <li><strong>Create a Reddit account for the bot</strong><br>
+          Make a new Reddit user account like <code>ModBotHelper</code>. This account will perform actions on your sub.
+        </li>
+        <li><strong>Add it as a moderator</strong><br>
+          Go to <code>r/YOURSUB/about/moderators</code> and add the bot with these permissions:
+          <ul>
+            <li><strong>Posts</strong> – to comment, remove, or edit content</li>
+            <li><strong>Flair</strong> – to apply user or post flairs</li>
+            <li><strong>Config</strong> – to read subreddit settings</li>
+            <li><strong>ModLog</strong> – to respond to rule triggers or track actions</li>
+          </ul>
+          <em>Optional:</em> You may also enable:
+          <ul>
+            <li><strong>Wiki</strong> – if the bot uses wiki-based rules</li>
+            <li><strong>Mail</strong> – if integrating with modmail alerts</li>
+          </ul>
+        </li>
+        <li><strong>Register an App on Reddit</strong><br>
+          Log in as the bot, visit <a href="https://www.reddit.com/prefs/apps" target="_blank">reddit.com/prefs/apps</a>, and create a <strong>Web App</strong> with:
+          <ul>
+            <li><strong>Name:</strong> ModBot</li>
+            <li><strong>Redirect URI:</strong> Your login callback URL (e.g., <code>https://modbot.io/callback</code>)</li>
+          </ul>
+          Save your <code>client_id</code> and <code>client_secret</code>.
+        </li>
+        <li><strong>Request the proper OAuth scopes</strong><br>
+          When authenticating, include scopes like:
+          <code>identity, read, modposts, modconfig, submit, modlog, modflair</code>
+        </li>
+      </ol>
+      <p style="color: #6b7280; font-size: 0.9rem;">
+        ModBot uses these permissions only to automate moderation tasks you explicitly configure—nothing more.
+      </p>
+    </div>
+  </main>
 </body>
 </html>

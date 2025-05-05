@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configure SciFiQuoteBot</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <nav class="container">
+    <div class="logo"><strong>ModBot.io</strong></div>
+    <div class="nav-links">
+      <a href="bots.html">Back to Bots</a>
+    </div>
+  </nav>
+</header>
+<main class="container">
+  <h1>SciFiQuoteBot Configuration</h1>
+  <form>
+    <label for="trigger-command">Trigger Command</label>
+    <input type="text" id="trigger-command" value="!modbotquote" />
+
+    <label for="quote-type">Quote Type</label>
+    <select id="quote-type">
+      <option>Classic Sci-Fi</option>
+      <option>Modern Sci-Fi</option>
+      <option>Random</option>
+    </select>
+
+    <label for="footer-text">Footer Text</label>
+    <input type="text" id="footer-text" placeholder="e.g. Live long and prosper." />
+
+    <div>
+      <label for="enable-quotebot">Enable SciFiQuoteBot</label>
+      <input type="checkbox" id="enable-quotebot" checked />
+    </div>
+
+    <button type="submit" class="button">Save Settings</button>
+  </form>
+</main>
+</body>
+</html>
